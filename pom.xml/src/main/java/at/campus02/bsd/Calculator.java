@@ -19,4 +19,7 @@ public class Calculator {
         }
         return a / b;
     }
+    public int factorial(int number) {
+        return 0;
+    }
 }
