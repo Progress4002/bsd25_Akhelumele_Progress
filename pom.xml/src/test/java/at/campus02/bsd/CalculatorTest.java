@@ -80,4 +80,21 @@ public class CalculatorTest {
     void testDivide_ByZero_ThrowsException() {
         assertThrows(ArithmeticException.class, () -> calc.divide(5, 0));
     }
+
+    // FACTORIAL
+
+    @Test
+    void testFactorial_Zero() {
+        assertEquals(1, calc.factorial(0));
+    }
+
+    @Test
+    void testFactorial_PositiveNumber() {
+        assertEquals(120, calc.factorial(5));
+    }
+
+    @Test
+    void testFactorial_NegativeNumber() {
+        assertEquals(0, calc.factorial(-3));
+    }
 }
