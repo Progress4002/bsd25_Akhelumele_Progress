@@ -26,5 +26,11 @@ public class CalculatorMain {
                 + calculator.multiply(10.0, 5.0));
 
         System.out.println("Akhelumele");
+
+        try {
+            calculator.divide(10.0, 0.0);
+        } catch (ArithmeticException exception) {
+            System.out.println("Fehler: " + exception.getMessage());
+        }
     }
 }

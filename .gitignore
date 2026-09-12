@@ -1,2 +1,7 @@
+**/src/main/resources/log4j2.xml
+**/logs/
+**/*.log
 *.html
 *.pdf
+.idea/
+target/
